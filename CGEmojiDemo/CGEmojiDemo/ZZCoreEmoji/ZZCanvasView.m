@@ -105,8 +105,8 @@
     if (!self.currentView) return;
     if (self.currentView.type == ZZMatterTypeText) {
         // 编辑文字
-        if (self.delegate && [self.delegate respondsToSelector:@selector(ZZCanvasView:doubleTapMatter:)]) {
-            [self.delegate ZZCanvasView:self doubleTapMatter:self.currentView];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(zzCanvasView:doubleTapMatter:)]) {
+            [self.delegate zzCanvasView:self doubleTapMatter:self.currentView];
         }
     }
 }

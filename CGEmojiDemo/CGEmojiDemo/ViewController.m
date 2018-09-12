@@ -61,11 +61,9 @@
     [self.canvasView.matterViews addObject:mView];
 }
 
-
 #pragma mark - ZZCanvasViewDelegate
 
-- (void)ZZCanvasView:(ZZCanvasView *)canvasView
-         doubleTapMatter:(ZZMatterView *)matterView
+- (void)zzCanvasView:(ZZCanvasView *)canvasView doubleTapMatter:(ZZMatterView *)matterView
 {
     __weak typeof(self) weakSelf = self;
     ZZTextAttributes *attributes = matterView.textAttributes;
@@ -87,7 +85,7 @@
 
 - (IBAction)designAction:(id)sender {
     
-    
+    // 制作图片
     self.canvasView.currentView = nil;
     
     ZZDrawImageOptions *options = [[ZZDrawImageOptions alloc]

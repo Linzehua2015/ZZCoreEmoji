@@ -10,7 +10,7 @@
 
 @class ZZMatterView, ZZCanvasView;
 @protocol ZZCanvasViewDelegate<NSObject>
-- (void)ZZCanvasView:(ZZCanvasView *)canvasView doubleTapMatter:(ZZMatterView *)matterView;
+- (void)zzCanvasView:(ZZCanvasView *)canvasView doubleTapMatter:(ZZMatterView *)matterView;
 @end
 
 @interface ZZCanvasView : UIView
